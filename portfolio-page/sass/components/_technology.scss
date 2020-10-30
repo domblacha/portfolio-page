@@ -1,0 +1,181 @@
+.technology {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  &__title {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include mq(medium, "portrait") {
+      font-size: 4rem;
+    }
+    @include mq(medium, "landscape") {
+      padding-top: 6%;
+      font-size: 4rem;
+    }
+    @include mq(xlarge, "landscape") {
+      padding-top: 0;
+      font-size: 4.5rem;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    width: 90%;
+
+    margin: 10% auto 0 auto;
+
+    @include mq(medium, "portrait") {
+      margin-top: 25%;
+      width: 75%;
+    }
+    @include mq(medium, "landscape") {
+      width: 75%;
+    }
+    @include mq(large, "landscape") {
+      width: 80%;
+    }
+    @include mq(xlarge, "landscape") {
+      width: 70%;
+    }
+    @include mq(xxlarge, "landscape") {
+      margin: 8% auto 0 auto;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 0 auto;
+
+    @include mq(large, "landscape") {
+      width: 300px;
+      height: 300px;
+    }
+    @include mq(xxlarge, "landscape") {
+      width: 0px;
+      height: 380px;
+    }
+  }
+
+  &__description {
+    height: 200px;
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    @include mq(small, "landscape") {
+      font-size: 2rem;
+    }
+    @include mq(medium, "portrait") {
+      font-size: 3rem;
+    }
+    @include mq(medium, "landscape") {
+      font-size: 2.5rem;
+    }
+    @include mq(large, "landscape") {
+      text-align: center;
+      font-size: 2.7rem;
+    }
+    @include mq(xlarge, "landscape") {
+      font-size: 3rem;
+    }
+    @include mq(xxxlarge, "landscape") {
+      font-size: 3.7rem;
+    }
+  }
+  &__next {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    font-size: 3rem;
+    color: #666;
+  }
+  &__prev {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 3rem;
+    color: #666;
+  }
+  &__link {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #3e75c3;
+    @include mq(small, "landscape") {
+      font-size: 2.2rem;
+    }
+    @include mq(medium, "portrait") {
+      font-size: 3.2rem;
+    }
+    @include mq(medium, "landscape") {
+      font-size: 2.7rem;
+    }
+    @include mq(large, "landscape") {
+      font-size: 2.9rem;
+    }
+    @include mq(xlarge, "landscape") {
+      font-size: 3.2rem;
+    }
+    @include mq(xxxlarge, "landscape") {
+      font-size: 3.9rem;
+    }
+  }
+}
+
+.html,
+.css,
+.js {
+  flex-shrink: 0;
+  width: 166px;
+  height: 220px;
+  @include mq(medium, "portrait") {
+    width: 176px;
+    height: 230px;
+  }
+  @include mq(medium, "landscape") {
+    width: 146px;
+    height: 200px;
+  }
+  @include mq(large, "landscape") {
+    width: 230px;
+    height: 290px;
+  }
+  @include mq(xxlarge, "landscape") {
+    width: 260px;
+    height: 320px;
+  }
+  @include mq(xxxlarge, "landscape") {
+    width: 300px;
+    height: 380px;
+  }
+}
+.git,
+.react {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  @include mq(medium, "portrait") {
+    width: 190px;
+    height: 190px;
+  }
+  @include mq(medium, "landscape") {
+    width: 146px;
+    height: 146px;
+  }
+  @include mq(large, "landscape") {
+    width: 250px;
+    height: 250px;
+  }
+  @include mq(xxlarge, "landscape") {
+    width: 290px;
+    height: 290px;
+  }
+  @include mq(xxxlarge, "landscape") {
+    width: 350px;
+    height: 350px;
+  }
+}

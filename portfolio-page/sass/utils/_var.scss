@@ -1,0 +1,32 @@
+$breakpoints: (
+  xsmall: (
+    min-width: 414px,
+  ),
+  small: (
+    min-width: 667px,
+  ),
+  medium: (
+    min-width: 768px,
+  ),
+  large: (
+    min-width: 1024px,
+  ),
+  xlarge: (
+    min-width: 1400px,
+  ),
+  xxlarge: (
+    min-width: 1600px,
+  ),
+  xxxlarge: (
+    min-width: 1900px,
+  ),
+);
+
+@mixin mq($breakpoint, $view: "landscape") {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media #{$size} and (orientation: #{$view}) {
+      @content;
+    }
+  }
+}

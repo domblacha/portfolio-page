@@ -1,0 +1,9 @@
+.footer {
+  background-color: black;
+  &__copy {
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+}

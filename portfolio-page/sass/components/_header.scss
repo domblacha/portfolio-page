@@ -1,0 +1,112 @@
+.header {
+  &__menu-icons {
+    position: fixed;
+    z-index: 2;
+    top: 2%;
+    right: 5%;
+    font-size: 4rem;
+    color: #fff;
+    &--left {
+      right: 35%;
+      font-size: 4rem;
+    }
+    @include mq(small, "landscape") {
+      top: 5%;
+    }
+    @include mq(medium, "portrait") {
+      font-size: 6rem;
+    }
+    @include mq(large, "landscape") {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: none;
+    &--show {
+      display: block;
+    }
+  }
+  &__menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    background-color: black;
+
+    transition: 0.3s;
+    @include mq(small, "landscape") {
+      right: -45%;
+      width: 45%;
+    }
+    @include mq(large, "landscape") {
+      position: fixed;
+      height: 100px;
+      line-height: 100px;
+      right: 0;
+      width: 100%;
+      background-color: transparent;
+    }
+    &--active {
+      right: 0;
+    }
+    &--transition {
+      height: 80px;
+      line-height: 80px;
+      background-color: #000;
+    }
+  }
+  &__menu-list {
+    list-style: none;
+    margin-top: 100px;
+
+    @include mq(medium, "portrait") {
+      margin-top: 150px;
+    }
+    @include mq(large, "landscape") {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 3%;
+      margin-top: 0;
+    }
+  }
+  &__menu-item {
+    padding: 5%;
+    text-align: center;
+    @include mq(small, "landscape") {
+      padding: 2%;
+    }
+    @include mq(large, "landscape") {
+      padding: 0;
+      margin: 0 2% 0 0;
+    }
+    @include mq(xxlarge, "landscape") {
+      padding: 0;
+      margin: 0 2% 0 0;
+    }
+  }
+  &__menu-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    &:hover {
+      @include mq(xlarge, "landscape") {
+        color: #666;
+      }
+    }
+    @include mq(small, "landscape") {
+      font-size: 2rem;
+    }
+    @include mq(medium, "portrait") {
+      font-size: 3rem;
+    }
+    @include mq(xlarge, "landscape") {
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominik Błacha - Frontend Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu-icons">
+        <i
+          class="fa fa-bars header__icon header__icon--show"
+          aria-hidden="true"
+        ></i>
+        <i class="fa fa-times header__icon" aria-hidden="true"></i>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list ">
+          <li class="header__menu-item">
+            <a href="./index.html" class="header__menu-link">Strona główna</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link" id="about">O mnie</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link" id="contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="header-baner">
+      <div class="header-baner__wrapper">
+        <div class="header-baner__logo">
+          <h1 class="header-baner__title">Dominik Błacha</h1>
+          <h2 class="header-baner__subtitle">Front-end Developer</h2>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <h3 class="about__title">O mnie</h3>
+      <div class="about__wrapper">
+        <img src="./img/dominik.png" alt="" class="about__image" />
+        <div class="about__content">
+          <h4 class="about__hello">Cześć!</h4>
+          <p class="about__self-description">
+            Jestem studentem trzeciego roku informatyki, oraz początkującym
+            programistą stron internetowych. Jest to moja największa pasja,
+            która sprawia mi ogrąmną radość. Główinie specjalizuję się
+            w technologiach front-endowych wciąż poszerzając swoją wiedzę
+            w tym kierunku. Bardzo lubię podróże, wędrówki górskie
+            i dobrą kuchnie, szczególnie włoską :)
+          </p>
+          <a href="" class="about__link">Moje cv</a>
+        </div>
+      </div>
+    </section>
+    <section class="technology">
+      <h3 class="technology__title">Technologie, które wykorzystuję</h3>
+      <div class="technology__wrapper">
+        <div class="technology__logo">
+          <img class="technology__image html" src="./img/html.png" alt="">     
+        </div>
+        <p class="technology__description">Rozumiem oraz stosuję zgodnie ze standardami znaczniki semantyczne, listy, tabele, formularze, nagłówki oraz wiele innych elementów odpowiedzialnych za strukturę strony internetowej.</p>
+        <i class="fa fa-arrow-right technology__next" aria-hidden="true"></i>
+        <i class="fa fa-arrow-left technology__prev" aria-hidden="true "></i>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <h3 class="contact__title">Skontaktuj się ze mną</h3>
+      <div class="contact__wrapper">
+        <form class="contact__form">
+          <input class="contact__input" placeholder="Imię" type="text">
+          <input class="contact__input" placeholder="Email" type="text">
+          <textarea class="contact__message" placeholder="Twoja wiadomość"></textarea>
+          <input type="submit" value="Wyślij wiadomość" class="contact__btn">
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__copy">&copy; Dominik Błacha 2020</p>
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/menu_active.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/scrollToSection.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

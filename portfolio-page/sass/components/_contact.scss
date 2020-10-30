@@ -1,0 +1,73 @@
+.contact {
+  min-height: 100vh;
+  background-color: #000;
+
+  &__title {
+    padding-top: 3%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include mq(large, "landscape") {
+      padding-top: 9%;
+      font-size: 4rem;
+    }
+  }
+  &__wrapper {
+    width: 90%;
+    margin: 10% auto 0 auto;
+    @include mq(xxlarge, "landscape") {
+      margin-top: 5%;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @include mq(large, "landscape") {
+      max-width: 50%;
+      margin: 0 auto 0 auto;
+    }
+  }
+  &__input {
+    flex-basis: 40px;
+    margin-bottom: 5%;
+    &::placeholder {
+      font-family: "Saira Condensed", sans-serif;
+    }
+
+    @include mq(xxlarge, "landscape") {
+      flex-basis: 50px;
+    }
+  }
+  &__message {
+    flex-basis: 150px;
+    &::placeholder {
+      font-family: "Saira Condensed", sans-serif;
+    }
+    @include mq(xxlarge, "landscape") {
+      flex-basis: 200px;
+    }
+  }
+  &__btn {
+    display: block;
+    line-height: 60px;
+    margin-top: 10%;
+    letter-spacing: 4px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 0.2s;
+    &:hover {
+      @include mq(xlarge, "landscape") {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+    @include mq(xlarge, "landscape") {
+      font-size: 2.6rem;
+    }
+  }
+}
